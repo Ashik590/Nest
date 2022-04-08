@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Nest - Multipurpose eCommerce HTML Template</title>
+</head>
+
+<body>
+    <header class="containers header-desktop d-none d-lg-block">
+        <div class="part1">
+            <ul class="d-flex lato">
+                <li class="right_gray_border"><a class="gray" href="/">About Us</a></li>
+                <li class="right_gray_border"><a class="gray" href="/">My Account</a></li>
+                <li class="right_gray_border"><a class="gray" href="/">Wishlist</a></li>
+                <li><a class="gray" href="/">Order Tracking</a></li>
+            </ul>
+        </div>
+        <div class="part2 px-4 d-flex" style="gap: 25px;">
+            <a href="/">
+                <img class="logo" src="assets/imgs/theme/logo.svg" alt="logo">
+            </a>
+            <form action="" class="d-flex w-100 position-relative">
+                <div id="all_cate" class="pointer">
+                    <div class="right_gray_border d-flex align-items-center"
+                        style="gap: 12px;border-color: rgb(200, 200, 200);">
+                        <span class="all_cate_label bold">All Categories</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z"
+                                fill="#8C8C8C" />
+                        </svg>
+                    </div>
+                </div>
+                <input class="border-0 px-3" type="text" placeholder="Search for items..">
+                <a class="searchBtn" href="/">
+                    <svg style="fill: #fff;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z">
+                        </path>
+                    </svg>
+                </a>
+                <div id="category_search" class="d-none">
+                    <input type="text" class="w-100">
+                    <ul>
+                        <li>All Categories</li>
+                        <li>Milks and Dairies</li>
+                        <li>Wines &amp; Alcohol</li>
+                        <li>Clothing &amp; Beauty</li>
+                        <li>Pet Foods &amp; Toy</li>
+                        <li>Fast food</li>
+                        <li>Baking material</li>
+                        <li>Vegetables</li>
+                        <li>Fresh Seafood</li>
+                        <li>Noodles &amp; Rice</li>
+                        <li>Ice cream</li>
+                    </ul>
+                </div>
+            </form>
+            <div class="align-items-center d-none d-xl-flex">
+                <ul class="d-flex align-items-center">
+                    <li class="px_10px ps-0"><a href="/" class="d-flex gray" style="gap: 5px;">
+                            <div class="position-relative" style="line-height: 12px;">
+                                <img width="23px" src="assets/imgs/theme/icons/icon-compare.svg" alt="icon">
+                                <span class="noti">3</span>
+                            </div>
+                            <span>Compare</span>
+                        </a></li>
+                    <li class="px_10px">
+                        <a href="/" class="d-flex gray" style="gap: 5px;">
+                            <div class="position-relative" style="line-height: 12px;">
+                                <img width="23px" src="assets/imgs/theme/icons/icon-heart.svg" alt="icon">
+                                <span class="noti">3</span>
+                            </div>
+                            <span>Wishlist</span>
+                        </a>
+                    </li>
+                    <li class="py-3 parent_drop px_10px">
+                        <a href="/" class="d-flex gray" style="gap: 5px;">
+                            <div class="position-relative" style="line-height: 12px;">
+                                <img width="23px" src="assets/imgs/theme/icons/icon-cart.svg" alt="icon">
+                                <span class="noti">3</span>
+                            </div>
+                            <span>Cart</span>
+                        </a>
+                        <div class="dropdown" style="right: 0;width: 260px;">
+                            <div class="mb-4 d-flex align-items-center justify-content-between" style="gap: 8px;">
+                                <img class="cart_img" src="assets/imgs/placeholder.png" alt="image">
+                                <div>
+                                    <a href="/" class="greenToBlack">Daisy Casual Bag</a>
+                                    <br>
+                                    <span>1 × $800.00</span>
+                                </div>
+                                <span class="pointer">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_108_4)">
+                                            <path
+                                                d="M23.954 21.03L14.77 11.935L23.862 2.761L21.03 -0.0460014L11.94 9.133L2.764 0.0449986L-0.0460014 2.855L9.14 11.96L0.0449986 21.144L2.855 23.954L11.967 14.762L21.147 23.862L23.954 21.03Z"
+                                                fill="#767676" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_108_4">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="mb-4 d-flex align-items-center justify-content-between" style="gap: 8px;">
+                                <img class="cart_img" src="assets/imgs/placeholder.png" alt="image">
+                                <div>
+                                    <a href="/" class="greenToBlack">Daisy Casual Bag</a>
+                                    <br>
+                                    <span>1 × $800.00</span>
+                                </div>
+                                <span class="pointer">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_108_4)">
+                                            <path
+                                                d="M23.954 21.03L14.77 11.935L23.862 2.761L21.03 -0.0460014L11.94 9.133L2.764 0.0449986L-0.0460014 2.855L9.14 11.96L0.0449986 21.144L2.855 23.954L11.967 14.762L21.147 23.862L23.954 21.03Z"
+                                                fill="#767676" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_108_4">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <span class="bold" style="font-size: 20px;">Total</span>
+                                <span class="fw-bold green" style="font-size: 20px;">$2000</span>
+                            </div>
+                            <div class="d-flex cart justify-content-between mt-3">
+                                <button>View Cart</button>
+                                <button>Checkout</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 parent_drop px_10px pe-0">
+                        <a href="/" class="d-flex gray" style="gap: 5px;">
+                            <img width="23px" src="assets/imgs/theme/icons/icon-user.svg" alt="icon">
+                            <span>Account</span>
+                        </a>
+                        <div class="dropdown account" style="right: 0;">
+                            <ul>
+                                <li>
+                                    <a href="/" class="link d-flex align-items-center gap2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z" />
+                                        </svg>
+                                        <span>My Account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link d-flex align-items-center gap2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
+                                        </svg>
+                                        <span>Order Tracking</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link d-flex align-items-center gap2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M16 0h-14v24h20v-18l-6-6zm0 3l3 3h-3v-3zm-12 19v-20h10v6h6v14h-16z" />
+                                        </svg>
+                                        <span>My Voucher</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link d-flex align-items-center gap2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z" />
+                                        </svg>
+                                        <span>My Wishlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link d-flex align-items-center gap2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 14.187v-4.374c-2.148-.766-2.726-.802-3.027-1.529-.303-.729.083-1.169 1.059-3.223l-3.093-3.093c-2.026.963-2.488 1.364-3.224 1.059-.727-.302-.768-.889-1.527-3.027h-4.375c-.764 2.144-.8 2.725-1.529 3.027-.752.313-1.203-.1-3.223-1.059l-3.093 3.093c.977 2.055 1.362 2.493 1.059 3.224-.302.727-.881.764-3.027 1.528v4.375c2.139.76 2.725.8 3.027 1.528.304.734-.081 1.167-1.059 3.223l3.093 3.093c1.999-.95 2.47-1.373 3.223-1.059.728.302.764.88 1.529 3.027h4.374c.758-2.131.799-2.723 1.537-3.031.745-.308 1.186.099 3.215 1.062l3.093-3.093c-.975-2.05-1.362-2.492-1.059-3.223.3-.726.88-.763 3.027-1.528zm-4.875.764c-.577 1.394-.068 2.458.488 3.578l-1.084 1.084c-1.093-.543-2.161-1.076-3.573-.49-1.396.581-1.79 1.693-2.188 2.877h-1.534c-.398-1.185-.791-2.297-2.183-2.875-1.419-.588-2.507-.045-3.579.488l-1.083-1.084c.557-1.118 1.066-2.18.487-3.58-.579-1.391-1.691-1.784-2.876-2.182v-1.533c1.185-.398 2.297-.791 2.875-2.184.578-1.394.068-2.459-.488-3.579l1.084-1.084c1.082.538 2.162 1.077 3.58.488 1.392-.577 1.785-1.69 2.183-2.875h1.534c.398 1.185.792 2.297 2.184 2.875 1.419.588 2.506.045 3.579-.488l1.084 1.084c-.556 1.121-1.065 2.187-.488 3.58.577 1.391 1.689 1.784 2.875 2.183v1.534c-1.188.398-2.302.791-2.877 2.183zm-7.125-5.951c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.238-5 5s2.238 5 5 5 5-2.238 5-5-2.238-5-5-5z" />
+                                        </svg>
+                                        <span>Setting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link d-flex align-items-center gap2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24">
+                                            <path d="M16 9v-4l8 7-8 7v-4h-8v-6h8zm-16-7v20h14v-2h-12v-16h12v-2h-14z" />
+                                        </svg>
+                                        <span>Sign out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="part3 px-3 d-flex align-items-center position-relative" style="gap: 20px;">
+            <button id="shop_by_cate">
+                <svg width="20" height="20" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM384 96H256V224H384V96zM384 288H256V416H384V288zM192 224V96H64V224H192zM64 416H192V288H64V416z" />
+                </svg>
+                <span>Shop By Categories</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z" fill="#fff"></path>
+                </svg>
+            </button>
+            <div class="shops">
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-1.svg" alt="icon">
+                    <span>Milks and Dairies</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-2.svg" alt="icon">
+                    <span>Wines & Drinks</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-3.svg" alt="icon">
+                    <span>Clothing & beauty</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-4.svg" alt="icon">
+                    <span>Pet Foods & Toy</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-5.svg" alt="icon">
+                    <span>Fast food</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-6.svg" alt="icon">
+                    <span>Baking material</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-7.svg" alt="icon">
+                    <span>Vegetables</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-8.svg" alt="icon">
+                    <span>Fresh fruits</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-9.svg" alt="icon">
+                    <span>Bread and Juice</span>
+                </a>
+                <a class="link" href="/">
+                    <img src="assets/imgs/theme/icons/category-10.svg" alt="icon">
+                    <span>Fresh Seafood</span>
+                </a>
+            </div>
+            <ul class="d-flex" style="flex-basis: 100%;flex-wrap: wrap;">
+                <li>
+                    <a href="/" class="link d-flex align-items-center gap2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_109_2)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.1875 0C7.69583 5.99083 2.5 8.05333 2.5 13.33C2.5 16.9142 5.0575 19.9733 10 20C14.9425 20.0267 17.5 16.3217 17.5 12.5367C17.5 9.08583 15.7817 5.83167 12.54 3.80833C13.31 5.98083 12.285 7.965 11.2892 8.64833C11.3475 5.8675 10.3517 1.74083 7.1875 0ZM11.1133 10.8333C14.2425 14.1575 12.3208 18.3333 9.8075 18.3333C8.27833 18.3333 7.49167 17.2792 7.5 16.1858C7.51583 14.1583 9.78083 14.1567 11.1133 10.8333V10.8333Z"
+                                    fill="#3BB77E" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_109_2">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Hot Deals</span>
+                    </a>
+                </li>
+                <li class="parent_drop">
+                    <div class="pointer">
+                        <span>Home</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown" style="width: 170px;">
+                        <ul>
+                            <li>
+                                <a href="/" class="link">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="/" class="link">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="/" class="link">Home 3</a>
+                            </li>
+                            <li>
+                                <a href="/" class="link">Home 4</a>
+                            </li>
+                            <li>
+                                <a href="/" class="link">Home 5</a>
+                            </li>
+                            <li>
+                                <a href="/" class="link">Home 6</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/" class="link">
+                        About
+                    </a>
+                </li>
+                <li class="parent_drop">
+                    <div class="pointer">
+                        <span>Shop</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown" style="width: 200px;">
+                        <ul>
+                            <li><a href="/" class="link">Shop Grid – Right Sidebar</a></li>
+                            <li><a href="/" class="link">Shop Grid – Left Sidebar</a></li>
+                            <li><a href="/" class="link">Shop List – Right Sidebar</a></li>
+                            <li><a href="/" class="link">Shop List – Left Sidebar</a></li>
+                            <li><a href="/" class="link">Shop - Wide</a></li>
+                            <li class="position-relative">
+                                <a href="/" class="link d-flex justify-content-between align-items-center"
+                                    onclick="return false">Single Product
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_110_2)">
+                                            <path
+                                                d="M3.05415 10L1.87498 8.82125L5.76623 4.99833L1.87498 1.17875L3.05415 8.34465e-07L8.12498 4.99833L3.05415 10Z"
+                                                fill="#8C8C8C" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_110_2">
+                                                <rect width="10" height="10" fill="white"
+                                                    transform="translate(-1.52588e-05 10) rotate(-90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <ul class="deep_dropdown">
+                                    <li><a href="/" class="link">Product – Right Sidebar</a></li>
+                                    <li><a href="/" class="link">Product – Left Sidebar</a></li>
+                                    <li><a href="/" class="link">Product – No sidebar</a></li>
+                                    <li><a href="/" class="link">Product – Vendor Info</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="link">Shop – Filter</a></li>
+                            <li><a href="/" class="link">Shop – Wishlist</a></li>
+                            <li><a href="/" class="link">Shop – Cart</a></li>
+                            <li><a href="/" class="link">Shop – Checkout</a></li>
+                            <li><a href="/" class="link">Shop – Compare</a></li>
+                            <li class="position-relative">
+                                <a href="/" class="link d-flex justify-content-between align-items-center"
+                                    onclick="return false">
+                                    <span>Shop Invoice</span>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_110_2)">
+                                            <path
+                                                d="M3.05415 10L1.87498 8.82125L5.76623 4.99833L1.87498 1.17875L3.05415 8.34465e-07L8.12498 4.99833L3.05415 10Z"
+                                                fill="#8C8C8C" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_110_2">
+                                                <rect width="10" height="10" fill="white"
+                                                    transform="translate(-1.52588e-05 10) rotate(-90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <ul class="deep_dropdown">
+                                    <li><a href="/" class="link">Shop Invoice 1</a></li>
+                                    <li><a href="/" class="link">Shop Invoice 2</a></li>
+                                    <li><a href="/" class="link">Shop Invoice 3</a></li>
+                                    <li><a href="/" class="link">Shop Invoice 4</a></li>
+                                    <li><a href="/" class="link">Shop Invoice 5</a></li>
+                                    <li><a href="/" class="link">Shop Invoice 6</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="parent_drop">
+                    <div class="pointer">
+                        <span>Vendors</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown" style="width: 200px;">
+                        <ul>
+                            <li><a class="link" href="/">Vendors Grid</a></li>
+                            <li><a class="link" href="/">Vendors List</a></li>
+                            <li><a class="link" href="/">Vendor Details 01</a></li>
+                            <li><a class="link" href="/">Vendor Details 02</a></li>
+                            <li><a class="link" href="/">Vendor Dashboard</a></li>
+                            <li><a class="link" href="/">Vendor Guide</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="parent_drop position-static">
+                    <div class="pointer">
+                        <span>Mega menu</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z"></path>
+                        </svg>
+                    </div>
+                    <div class="mega_menu">
+                        <div>
+                            <h5 class="bold">Fruit & vegatables</h5>
+                            <ul>
+                                <li><a class="link" href="/">Meat &amp; Poultry</a></li>
+                                <li><a class="link" href="/">Fresh Vegetables</a></li>
+                                <li><a class="link" href="/">Herbs &amp; Seasonings</a></li>
+                                <li><a class="link" href="/">Cuts &amp; Sprouts</a></li>
+                                <li><a class="link" href="/">Exotic Fruits &amp; Veggies</a></li>
+                                <li><a class="link" href="/">Packaged Produce</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="bold">Breakfast & Diary</h5>
+                            <ul>
+                                <li><a class="link" href="/">Milk &amp; Flavoured Milk</a></li>
+                                <li><a class="link" href="/">Butter and Margarine</a></li>
+                                <li><a class="link" href="/">Eggs Substitutes</a></li>
+                                <li><a class="link" href="/">Marmalades</a></li>
+                                <li><a class="link" href="/">Sour Cream</a></li>
+                                <li><a class="link" href="/">Cheese</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="bold">Fruit & vegatables</h5>
+                            <ul>
+                                <li><a class="link" href="/">Breakfast Sausage</a></li>
+                                <li><a class="link" href="/">Dinner Sausage</a></li>
+                                <li><a class="link" href="/">Chicken</a></li>
+                                <li><a class="link" href="/">Sliced Deli Meat</a></li>
+                                <li><a class="link" href="/">Wild Caught Fillets</a></li>
+                                <li><a class="link" href="/">Crab and Shellfish</a></li>
+                            </ul>
+                        </div>
+                        <div class="third">
+                            <span>HOT DEALS</span>
+                            <h4 class="mt-2">Don't miss <br>
+                                Trending</h4>
+                            <h3 class="fw-bold">Save to 50%</h3>
+                            <button>SHOP NOW</button>
+                        </div>
+                        <div>
+                            <div class="off">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>
+                                        25%
+                                    </span>
+                                    off
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="parent_drop">
+                    <div class="pointer">
+                        <span>Blog</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown" style="width:200px">
+                        <ul class="sub-menu">
+                            <li><a class="link" href="/">Blog Category Grid</a></li>
+                            <li><a class="link" href="/">Blog Category List</a></li>
+                            <li><a class="link" href="/">Blog Category Big</a></li>
+                            <li><a class="link" href="/">Blog Category Wide</a></li>
+                            <li class="position-relative">
+                                <a href="/" onclick="return false"
+                                    class="link d-flex justify-content-between align-items-center">Single Post
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_110_2)">
+                                            <path
+                                                d="M3.05415 10L1.87498 8.82125L5.76623 4.99833L1.87498 1.17875L3.05415 8.34465e-07L8.12498 4.99833L3.05415 10Z"
+                                                fill="#8C8C8C" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_110_2">
+                                                <rect width="10" height="10" fill="white"
+                                                    transform="translate(-1.52588e-05 10) rotate(-90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <ul class="deep_dropdown" style="width: 150px;">
+                                    <li><a class="link" href="/">Left Sidebar</a></li>
+                                    <li><a class="link" href="/">Right Sidebar</a></li>
+                                    <li><a class="link" href="/">No Sidebar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="parent_drop">
+                    <div class="pointer">
+                        <span>Pages</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7.33L2.829 4.5L12.004 13.839L21.171 4.5L24 7.33L12.004 19.5L0 7.33Z"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown" style="width:170px">
+                        <ul class="sub-menu">
+                            <li><a class="link" href="/">About Us</a></li>
+                            <li><a class="link" href="/">Contact</a></li>
+                            <li><a class="link" href="/">My Account</a></li>
+                            <li><a class="link" href="/">Login</a></li>
+                            <li><a class="link" href="/">Register</a></li>
+                            <li><a class="link" href="/">Purchase Guide</a></li>
+                            <li><a class="link" href="/">Privacy Policy</a></li>
+                            <li><a class="link" href="/">Terms of Service</a></li>
+                            <li><a class="link" href="/">404 Page</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/" class="link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <header class="header-mobile d-block d-lg-none">
+        <div class="notice d-none d-md-block">
+            <span>Grand opening, <strong>up to 15%</strong> off all items. Only <strong>3 days</strong> left</span>
+        </div>
+        <div class="middle p-3 d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <svg id="open_canvas" class="pointer" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 18V19H0V18H24ZM24 12V13H0V12H24ZM24 6V7H0V6H24Z" fill="#1040E2"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 19H0V18H24V19ZM24 13H0V12H24V13ZM24 7H0V6H24V7Z" fill="#253D4E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 19V20H0V19H24ZM24 13V14H0V13H24ZM24 7V8H0V7H24Z" fill="#1040E2"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 20H0V19H24V20ZM24 14H0V13H24V14ZM24 8H0V7H24V8Z" fill="#253D4E"/>
+                </svg>                
+            </div>
+            <a href="/">
+                <img class="logo-mobile" src="assets/imgs/theme/logo.svg" alt="logo">
+            </a>
+            <ul class="d-flex align-items-center">
+                <li class="py-2 parent_drop px_10px">
+                    <a href="/" class="d-flex gray" style="gap: 5px;">
+                        <div class="position-relative" style="line-height: 12px;">
+                            <img width="23px" src="assets/imgs/theme/icons/icon-cart.svg" alt="icon">
+                            <span class="noti">3</span>
+                        </div>
+                    </a>
+                    <div class="dropdown" style="right: 0;width: 260px;">
+                        <div class="mb-4 d-flex align-items-center justify-content-between" style="gap: 8px;">
+                            <img class="cart_img" src="assets/imgs/placeholder.png" alt="image">
+                            <div>
+                                <a href="/" class="greenToBlack">Daisy Casual Bag</a>
+                                <br>
+                                <span>1 × $800.00</span>
+                            </div>
+                            <span class="pointer">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_108_4)">
+                                        <path d="M23.954 21.03L14.77 11.935L23.862 2.761L21.03 -0.0460014L11.94 9.133L2.764 0.0449986L-0.0460014 2.855L9.14 11.96L0.0449986 21.144L2.855 23.954L11.967 14.762L21.147 23.862L23.954 21.03Z" fill="#767676"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_108_4">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="mb-4 d-flex align-items-center justify-content-between" style="gap: 8px;">
+                            <img class="cart_img" src="assets/imgs/placeholder.png" alt="image">
+                            <div>
+                                <a href="/" class="greenToBlack">Daisy Casual Bag</a>
+                                <br>
+                                <span>1 × $800.00</span>
+                            </div>
+                            <span class="pointer">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_108_4)">
+                                        <path d="M23.954 21.03L14.77 11.935L23.862 2.761L21.03 -0.0460014L11.94 9.133L2.764 0.0449986L-0.0460014 2.855L9.14 11.96L0.0449986 21.144L2.855 23.954L11.967 14.762L21.147 23.862L23.954 21.03Z" fill="#767676"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_108_4">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2">
+                            <span class="bold" style="font-size: 20px;">Total</span>
+                            <span class="fw-bold green" style="font-size: 20px;">$2000</span>
+                        </div>
+                        <div class="d-flex cart justify-content-between mt-3">
+                            <button>View Cart</button>
+                            <button>Checkout</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="px_10px">
+                    <a href="/" class="d-flex gray" style="gap: 5px;">
+                        <div class="position-relative" style="line-height: 12px;">
+                            <img width="23px" src="assets/imgs/theme/icons/icon-heart.svg" alt="icon">
+                            <span class="noti">3</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <form action="" class="search ps-2 my-3" style="width:95%;margin: auto;">
+            <input placeholder="Search for items.." type="text" class="w-100">
+            <button class="searchBtn border-0">
+                <svg style="fill: #fff;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"></path></svg>
+            </button>
+        </form>
+    </header>
+
+    <!-- products list start-->
+    <section id="products" class="containers padx">
+        <div class="breadcrumb_">
+            <a href="/">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#7e7e7e" width="17" height="17" viewBox="0 0 24 24"><path d="M12 9.185l7 6.514v6.301h-3v-5h-8v5h-3v-6.301l7-6.514zm0-2.732l-9 8.375v9.172h7v-5h4v5h7v-9.172l-9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z"/></svg>
+                </span>
+            </a>
+            <small>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#7e7e7e" width="11" height="11" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+            </small>
+            <a href="">
+                <span>MEN</span>
+            </a>
+            <small>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#7e7e7e" width="11" height="11" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+            </small>
+            <span>ACCESSORIES</span>
+        </div>
+        <div class="product_list">
+            <div class="filter">
+                
+                <div>
+                    <h4 class="fw-bold">CATEGORIES</h4>
+                    <ul class="accordion_">
+                        <li data-bs-toggle="collapse" class="collapsed" data-bs-target="#ssubmenu1">
+                            <span>Accessories (3)</span>
+                            <span class="arrow">
+                                <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.125 3.125L15 5.03563L7.5 12.5L0 5.03563L1.875 3.125L7.5 8.75L13.125 3.125Z" fill="#7e7e7e"/>
+                                </svg>                                              
+                            </span>
+                        </li>
+                        <li class="collapsable_li collapse" class="collapsed" id="ssubmenu1">
+                            <ul class="sub_product">
+                                <li class="single">
+                                    <a href="/">
+                                        Caps (1)
+                                    </a>
+                                </li>
+                                <li class="single">
+                                    <a href="/">
+                                        Watches (2)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-bs-toggle="collapse" data-bs-target="#ssubmenu2" class="collapsed">
+                            <span>Dress (3)</span>
+                            <span class="arrow">
+                                <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.125 3.125L15 5.03563L7.5 12.5L0 5.03563L1.875 3.125L7.5 8.75L13.125 3.125Z" fill="#7e7e7e"/>
+                                </svg>                                              
+                            </span>                                              
+                        </li>
+                        <li class="collapsable_li collapse" id="ssubmenu2">
+                            <ul class="sub_product">
+                                <li class="single">
+                                    <a href="/">
+                                        Clothing (1)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-bs-toggle="collapse" data-bs-target="#ssubmenu3" class="collapsed">
+                            <span>Fashion (6)</span>
+                            <span class="arrow">
+                                <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.125 3.125L15 5.03563L7.5 12.5L0 5.03563L1.875 3.125L7.5 8.75L13.125 3.125Z" fill="#7e7e7e"/>
+                                </svg>                                              
+                            </span>                                              
+                        </li>
+                        <li class="collapsable_li collapse" id="ssubmenu3">
+                            <ul class="sub_product">
+                                <li class="single">
+                                    <a href="/">
+                                        Shoes (1)
+                                    </a>
+                                </li>
+                                <li class="single">
+                                    <a href="/">
+                                        Bags (2)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="single">
+                            <a href="/">Music (2)</a>                                             
+                        </li>
+                    </ul>
+                </div>
+                <div class="price border-top-0">
+                    <h4 class="fw-bold">PRICE</h4>
+                    <ul>
+                        <li>
+                            <a href="/">Under $25</a>
+                        </li>
+                        <li>
+                            <a href="/">$25 to $50</a>
+                        </li>
+                        <li>
+                            <a href="/">$50 to $100</a>
+                        </li>
+                        <li>
+                            <a href="/">$100 to $200</a>
+                        </li>
+                        <li>
+                            <a href="/">$200 & Above</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input type="text" class="form-control" placeholder="$Min">
+                        <input type="text" class="form-control" placeholder="$Max">
+                        <button>Go</button>
+                    </form>
+                </div>
+                <div class="brand border-top-0">
+                    <h4 class="fw-bold">FEATURED BRANDS</h4>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="brand1">
+                            <label for="brand1">Brand 1</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="brand2">
+                            <label for="brand2">Brand 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="brand3">
+                            <label for="brand3">Brand 3</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="brand4">
+                            <label for="brand4">Brand 4</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="all_products">
+                <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="filter_show">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.25 1.5C15.4905 1.5 16.5 2.5095 16.5 3.75V14.25C16.5 15.4905 15.4905 16.5 14.25 16.5H3.75C2.5095 16.5 1.5 15.4905 1.5 14.25V3.75C1.5 2.5095 2.5095 1.5 3.75 1.5H14.25ZM18 3.75C18 1.67925 16.3215 0 14.25 0H3.75C1.6785 0 0 1.67925 0 3.75V14.25C0 16.3207 1.6785 18 3.75 18H14.25C16.3215 18 18 16.3207 18 14.25V3.75ZM8.25 12.75H6.75V15H5.25V12.75H3.75V10.5H8.25V12.75ZM6.75 3H5.25V9H6.75V3ZM14.25 6.75H9.75V9H11.25V15H12.75V9H14.25V6.75ZM12.75 3H11.25V5.25H12.75V3Z" fill="#fff"/>
+                            </svg>
+                            Filter
+                        </div>
+                        <span class="me-2 fw-bolder" style="white-space: nowrap;">Sort By:</span>
+                        <select class="form-control drop-select">
+                            <option value="Default sorting">Default sorting</option>
+                            <option value="Sort by popularity">Sort by popularity</option>
+                            <option value="Sort by average rating">Sort by average rating</option>
+                            <option value="Sort by price: low to high">Sort by price: low to high</option>
+                            <option value="Sort by price: high to low">Sort by price: high to low</option>
+                        </select>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="me-2 fw-bolder">Show:</span>
+                        <select class="form-control drop-select">
+                           <option value="12">12</option>
+                           <option value="24">24</option>
+                           <option value="36">36</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-grid">
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/" class="d-block mb-2 text-center">
+                            <img class="image" src="assets/imgs/demo.jpg" alt="item photo">
+                        </a>
+                        <p class="title">
+                            <a href="/">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequatur cum beatae!</a>
+                        </p>
+                        <div class="d-flex position-relative show_detail_rating" style="gap: 10px;width: fit-content;">
+                            <div class="rating">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                            </div>
+                            <span>181,000</span>
+                            <div class="rating_details">
+                                <div class="d-flex" style="gap: 8px;">
+                                    <div class="rating" >
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/full-star.svg" alt="full star">
+                                        <img width="20px" src="assets/imgs/half-star.svg" alt="half star">
+                                        <img width="20px" src="assets/imgs/bare-star.svg" alt="bare star">
+                                    </div>
+                                    <b>4.7 out of 5</b>
+                                </div>
+
+                                <small class="mt-2 d-block">181,700 global ratings</small>
+                                <div class="avg mt-2">
+                                    <div>
+                                        <span>5 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>4 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>3 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>2 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">84%</span>
+                                    </div>
+                                    <div>
+                                        <span>1 star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="text-end">100%</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <a href="/" class="link2">See all customer reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_product">
+                            <sup>$</sup>
+                            <span>59</span>
+                            <sup>99</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#">
+                        <svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"/></svg>
+                    </a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">...</a>
+                    <a href="#">6</a>
+                    <a href="#">
+                        <svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mobile-filter lefted">
+        <div class="filter">
+                
+            <div>
+                <h4 class="fw-bold">CATEGORIES</h4>
+                <ul class="accordion_">
+                    <li data-bs-toggle="collapse" class="collapsed" data-bs-target="#ssubmenu1">
+                        <span>Accessories (3)</span>
+                        <span class="arrow">
+                            <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.125 3.125L15 5.03563L7.5 12.5L0 5.03563L1.875 3.125L7.5 8.75L13.125 3.125Z" fill="#7e7e7e"/>
+                            </svg>                                              
+                        </span>
+                    </li>
+                    <li class="collapsable_li collapse" class="collapsed" id="ssubmenu1">
+                        <ul class="sub_product">
+                            <li class="single">
+                                <a href="/">
+                                    Caps (1)
+                                </a>
+                            </li>
+                            <li class="single">
+                                <a href="/">
+                                    Watches (2)
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-bs-toggle="collapse" data-bs-target="#ssubmenu2" class="collapsed">
+                        <span>Dress (3)</span>
+                        <span class="arrow">
+                            <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.125 3.125L15 5.03563L7.5 12.5L0 5.03563L1.875 3.125L7.5 8.75L13.125 3.125Z" fill="#7e7e7e"/>
+                            </svg>                                              
+                        </span>                                              
+                    </li>
+                    <li class="collapsable_li collapse" id="ssubmenu2">
+                        <ul class="sub_product">
+                            <li class="single">
+                                <a href="/">
+                                    Clothing (1)
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-bs-toggle="collapse" data-bs-target="#ssubmenu3" class="collapsed">
+                        <span>Fashion (6)</span>
+                        <span class="arrow">
+                            <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.125 3.125L15 5.03563L7.5 12.5L0 5.03563L1.875 3.125L7.5 8.75L13.125 3.125Z" fill="#7e7e7e"/>
+                            </svg>                                              
+                        </span>                                              
+                    </li>
+                    <li class="collapsable_li collapse" id="ssubmenu3">
+                        <ul class="sub_product">
+                            <li class="single">
+                                <a href="/">
+                                    Shoes (1)
+                                </a>
+                            </li>
+                            <li class="single">
+                                <a href="/">
+                                    Bags (2)
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="single">
+                        <a href="/">Music (2)</a>                                             
+                    </li>
+                </ul>
+            </div>
+            <div class="price border-top-0">
+                <h4 class="fw-bold">PRICE</h4>
+                <ul>
+                    <li>
+                        <a href="/">Under $25</a>
+                    </li>
+                    <li>
+                        <a href="/">$25 to $50</a>
+                    </li>
+                    <li>
+                        <a href="/">$50 to $100</a>
+                    </li>
+                    <li>
+                        <a href="/">$100 to $200</a>
+                    </li>
+                    <li>
+                        <a href="/">$200 & Above</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input type="text" class="form-control" placeholder="$Min">
+                    <input type="text" class="form-control" placeholder="$Max">
+                    <button>Go</button>
+                </form>
+            </div>
+            <div class="brand border-top-0">
+                <h4 class="fw-bold">FEATURED BRANDS</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="brand1">
+                        <label for="brand1">Brand 1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="brand2">
+                        <label for="brand2">Brand 2</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="brand3">
+                        <label for="brand3">Brand 3</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="brand4">
+                        <label for="brand4">Brand 4</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- products list end-->
+    
+    <!-- footer -->
+    <footer class="containers mt-5">
+        <div>
+            <a href="/">
+                <img src="assets/imgs/theme/logo.svg" alt="logo">
+            </a>
+            <p class="mt-2">Awesome grocery store website template</p>
+            <ul class="d-grid gap-1">
+                <li>
+                    <svg fill="#3BB77E" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                    <small><b>Address:</b> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</small>
+                </li>
+                <li>
+                    <svg fill="#3BB77E" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M6 23v-11c-4.036 0-6 2.715-6 5.5 0 2.807 1.995 5.5 6 5.5zm18-5.5c0-2.785-1.964-5.5-6-5.5v11c4.005 0 6-2.693 6-5.5zm-12-13.522c-3.879-.008-6.861 2.349-7.743 6.195-.751.145-1.479.385-2.161.716.629-5.501 4.319-9.889 9.904-9.889 5.589 0 9.29 4.389 9.916 9.896-.684-.334-1.415-.575-2.169-.721-.881-3.85-3.867-6.205-7.747-6.197z"/></svg>
+                    <small><b>Call Us:</b> (+91) - 540-025-124553</small>
+                </li>
+                <li>
+                    <svg fill="#3BB77E" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
+                    <small><b>Email:</b> sale@Nest.com</small>
+                </li>
+                <li>
+                    <svg fill="#3BB77E" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M11 6v8h7v-2h-5v-6h-2zm10.854 7.683l1.998.159c-.132.854-.351 1.676-.652 2.46l-1.8-.905c.2-.551.353-1.123.454-1.714zm-2.548 7.826l-1.413-1.443c-.486.356-1.006.668-1.555.933l.669 1.899c.821-.377 1.591-.844 2.299-1.389zm1.226-4.309c-.335.546-.719 1.057-1.149 1.528l1.404 1.433c.583-.627 1.099-1.316 1.539-2.058l-1.794-.903zm-20.532-5.2c0 6.627 5.375 12 12.004 12 1.081 0 2.124-.156 3.12-.424l-.665-1.894c-.787.2-1.607.318-2.455.318-5.516 0-10.003-4.486-10.003-10s4.487-10 10.003-10c2.235 0 4.293.744 5.959 1.989l-2.05 2.049 7.015 1.354-1.355-7.013-2.184 2.183c-2.036-1.598-4.595-2.562-7.385-2.562-6.629 0-12.004 5.373-12.004 12zm23.773-2.359h-2.076c.163.661.261 1.344.288 2.047l2.015.161c-.01-.755-.085-1.494-.227-2.208z"/></svg>
+                    <small><b>Hours:</b> 10:00 - 18:00, Mon - Sat</small>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <ul class="d-grid gap-1">
+                <li>
+                    <a href="/" class="link"><small>About Us</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Privacy Policy</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Terms & Conditions</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Contact Us</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Support Center</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Careers</small></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Account</h4>
+            <ul class="d-grid gap-1">
+                <li>
+                    <a href="/" class="link"><small>Sign In</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>View Cart</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>My Wishlist</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Track My Order</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Help Ticket</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Shipping Details</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Compare Products</small></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Popular</h4>
+            <ul class="d-grid gap-1">
+                <li>
+                    <a href="/" class="link"><small>Milk & Flavoured Milk</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Butter and Margarine</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Eggs Substitutes</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Marmalades</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Sour Cream and Dips</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Tea & Kombucha</small></a>
+                </li>
+                <li>
+                    <a href="/" class="link"><small>Cheese</small></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Install App</h4>
+            <p><small>From App store or Google Play</small></p>
+            <div class="d-flex gap-2 install">
+                <a href="/">
+                    <img src="assets/imgs/theme/app-store.jpg" alt="App store">
+                </a>
+                <a href="/">
+                    <img src="assets/imgs/theme/google-play.jpg" alt="Google play">
+                </a>
+            </div>
+            <p class="mt-2"><small>Secured Payment Gateways</small></p>
+            <img src="assets/imgs/theme/payment-method.png" alt="payment gateways" class="d-block">
+        </div>
+    </footer>
+
+    <div class="overlay d-none"></div>
+    <div class="mobile_menu lefted">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="/">
+                <img src="assets/imgs/theme/logo.svg" alt="logo" width="100px">
+            </a>
+            <span class="cross">
+                <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_112_21)">
+                <path d="M14.9713 13.1438L9.23125 7.45937L14.9137 1.72562L13.1438 -0.0287514L7.4625 5.70812L1.7275 0.0281236L-0.0287514 1.78437L5.7125 7.475L0.0281236 13.215L1.78437 14.9713L7.47937 9.22625L13.2169 14.9137L14.9713 13.1438Z" fill="#253D4E"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_112_21">
+                <rect width="15" height="15" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </span>
+        </div>
+
+        <ul class="menus mt-5">
+            <li>
+                <span class="li" data-bs-toggle="collapse" data-bs-target="#submenu1">
+                    <span>Home</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_110_2)">
+                        <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_110_2">
+                        <rect width="10" height="10" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                   
+                </span>
+                <div id="submenu1" class="collapse">
+                    <ul class="under">
+                        <li><a href="/" class="link">Home1</a></li>
+                        <li><a href="/" class="link">Home2</a></li>
+                        <li><a href="/" class="link">Home3</a></li>
+                        <li><a href="/" class="link">Home4</a></li>
+                        <li><a href="/" class="link">Home5</a></li>
+                        <li><a href="/" class="link">Home6</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span class="li" data-bs-toggle="collapse" data-bs-target="#submenu2">
+                    <span>Shop</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_110_2)">
+                        <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_110_2">
+                        <rect width="10" height="10" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                   
+                </span>
+                <div id="submenu2" class="collapse">
+                    <ul class="under">
+                        <li><a href="/" class="link">Shop Grid - Right Sidebar</a></li>
+                        <li><a href="/" class="link">Shop Grid - Left Sidebar</a></li>
+                        <li><a href="/" class="link">Shop List - Right Sidebar</a></li>
+                        <li><a href="/" class="link">Shop List - Left Sidebar</a></li>
+                        <li><a href="/" class="link">Shop - Wide</a></li>
+                        <li>
+                            <span class="li" data-bs-toggle="collapse" data-bs-target="#sub_submenu1">
+                                <a href="/" class="link" onclick="return false">Single Product</a>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_110_2)">
+                                    <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_110_2">
+                                    <rect width="10" height="10" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>    
+                            </span>
+                            <ul class="deep_under collapse" id="sub_submenu1">
+                                <li>
+                                    <a class="link" href="/">Product - Right Sidebar</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Product - Left Sidebar</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Product - No Sidebar</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Product - Vendor Infor</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Shop - Filter</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Shop - Wishlist</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Shop - Cart</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Shop - Checkout</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Shop - Compare</a>
+                        </li>
+                        <li>
+                            <span class="li" data-bs-toggle="collapse" data-bs-target="#sub_submenu2">
+                                <a href="/" class="link" onclick="return false">Shop Invoice</a>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_110_2)">
+                                    <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_110_2">
+                                    <rect width="10" height="10" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>    
+                            </span>
+                            <ul class="deep_under collapse" id="sub_submenu2">
+                                <li>
+                                    <a class="link" href="/">Shop Invoice 1</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Shop Invoice 2</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Shop Invoice 3</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Shop Invoice 4</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Shop Invoice 5</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Shop Invoice 6</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span class="li" data-bs-toggle="collapse" data-bs-target="#submenu3">
+                    <span>Vendors</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_110_2)">
+                        <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_110_2">
+                        <rect width="10" height="10" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                   
+                </span>
+                <div id="submenu3" class="collapse">
+                    <ul class="under">
+                        <li><a href="/" class="link">Vendors Grid</a></li>
+                        <li><a href="/" class="link">Vendors List</a></li>
+                        <li><a href="/" class="link">Vendors Details 01</a></li>
+                        <li><a href="/" class="link">Vendors Details 02</a></li>
+                        <li><a href="/" class="link">Vendors Dashboard</a></li>
+                        <li><a href="/" class="link">Vendors Guide</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span class="li" data-bs-toggle="collapse" data-bs-target="#submenu4">
+                    <span>Mega Menu</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_110_2)">
+                        <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_110_2">
+                        <rect width="10" height="10" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                   
+                </span>
+                <div id="submenu4" class="collapse">
+                    <ul class="under">
+                        <li>
+                            <span class="li" data-bs-toggle="collapse" data-bs-target="#sub_submenu3">
+                                <a href="/" class="link" onclick="return false">Women's Fashion</a>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_110_2)">
+                                    <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_110_2">
+                                    <rect width="10" height="10" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>    
+                            </span>
+                            <ul class="deep_under collapse" id="sub_submenu3">
+                                <li>
+                                    <a class="link" href="/">Dresses</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Blouses & Shirts</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Hoodies & Sweatshirts</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Women's Sets</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="li" data-bs-toggle="collapse" data-bs-target="#sub_submenu4">
+                                <a href="/" class="link" onclick="return false">Men's Fashion</a>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_110_2)">
+                                    <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_110_2">
+                                    <rect width="10" height="10" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>    
+                            </span>
+                            <ul class="deep_under collapse" id="sub_submenu4">
+                                <li>
+                                    <a class="link" href="/">Jackets</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Casual Fuax Leather</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Genuine Leather</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="li" data-bs-toggle="collapse" data-bs-target="#sub_submenu5">
+                                <a href="/" class="link" onclick="return false">Technology</a>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_110_2)">
+                                    <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_110_2">
+                                    <rect width="10" height="10" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>    
+                            </span>
+                            <ul class="deep_under collapse" id="sub_submenu5">
+                                <li>
+                                    <a class="link" href="/">Gaming Laptops</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Ultraslim Laptops</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Tablets</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Laptops Accessories</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Tablet Accessories</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span class="li" data-bs-toggle="collapse" data-bs-target="#submenu5">
+                    <span>Shop</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_110_2)">
+                        <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_110_2">
+                        <rect width="10" height="10" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg> 
+                </span>
+                <div id="submenu5" class="collapse">
+                    <ul class="under">
+                        <li><a href="/" class="link">Blog Category Grid</a></li>
+                        <li><a href="/" class="link">Blog Category List</a></li>
+                        <li><a href="/" class="link">Blog Category Big</a></li>
+                        <li><a href="/" class="link">Blog Category Wide</a></li>
+                        <li>
+                            <a href="/" class="link">Blog Category Layout</a>
+                            <span class="li" data-bs-toggle="collapse" data-bs-target="#sub_submenu6">
+                                <a href="/" class="link" onclick="return false">Blog Category Layout</a>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_110_2)">
+                                    <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_110_2">
+                                    <rect width="10" height="10" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>    
+                            </span>
+                            <ul class="deep_under collapse" id="sub_submenu6">
+                                <li>
+                                    <a class="link" href="/">Left Sidebar</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">Right Sidebar</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="/">No Sidebar</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span class="li" data-bs-toggle="collapse" data-bs-target="#submenu6">
+                    <span>Pages</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_110_2)">
+                        <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_110_2">
+                        <rect width="10" height="10" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg> 
+                </span>
+                <div id="submenu6" class="collapse">
+                    <ul class="under">
+                        <li>
+                            <a href="/" class="link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">My Account</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Login</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Register</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Purchase Guide</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Terms Of Service</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">404 page</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span class="li" data-bs-toggle="collapse" data-bs-target="#submenu7">
+                    <span>Language</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_110_2)">
+                        <path d="M-1.52588e-05 3.05417L1.17873 1.875L5.00165 5.76625L8.82123 1.875L9.99998 3.05417L5.00165 8.125L-1.52588e-05 3.05417Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_110_2">
+                        <rect width="10" height="10" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg> 
+                </span>
+                <div id="submenu7" class="collapse">
+                    <ul class="under">
+                        <li>
+                            <a href="/" class="link">English</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">French</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">German</a>
+                        </li>
+                        <li>
+                            <a href="/" class="link">Spanish</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="location">
+            <div>
+                <a href="/">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_115_25)">
+                        <path d="M8 1.33333C10.1307 1.33333 12 3.07867 12 5.068C12 7.13 10.338 9.82267 8 13.5087C5.662 9.82267 4 7.13 4 5.068C4 3.07867 5.86933 1.33333 8 1.33333V1.33333ZM8 0C5.20133 0 2.66667 2.26867 2.66667 5.068C2.66667 7.86667 4.97933 11.208 8 16C11.0207 11.208 13.3333 7.86667 13.3333 5.068C13.3333 2.26867 10.7993 0 8 0V0ZM8 7.33333C6.89533 7.33333 6 6.438 6 5.33333C6 4.22867 6.89533 3.33333 8 3.33333C9.10467 3.33333 10 4.22867 10 5.33333C10 6.438 9.10467 7.33333 8 7.33333Z" fill="#3BB77E"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_115_25">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>   
+                    <span>Our location</span>
+                </a>
+            </div>
+            <div>
+                <a href="/">
+                    <svg style="fill: var(--green);" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 24 24">
+                        <path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"></path>
+                    </svg> 
+                    <span>Log In/Sign Up</span>                
+                </a>
+            </div>
+            <div>
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="fill: var(--green);" width="20" height="20" viewBox="0 0 24 24"><path d="M6 23v-11c-4.036 0-6 2.715-6 5.5 0 2.807 1.995 5.5 6 5.5zm18-5.5c0-2.785-1.964-5.5-6-5.5v11c4.005 0 6-2.693 6-5.5zm-12-13.522c-3.879-.008-6.861 2.349-7.743 6.195-.751.145-1.479.385-2.161.716.629-5.501 4.319-9.889 9.904-9.889 5.589 0 9.29 4.389 9.916 9.896-.684-.334-1.415-.575-2.169-.721-.881-3.85-3.867-6.205-7.747-6.197z"/></svg> 
+                    <span>(+01) - 2345 - 6789</span>                
+                </div>
+                </a>
+        </div>
+
+        <div class="social_icon">
+            <h6>Follow Us</h6>
+            <div>
+                <a href="#"><img width="18px" src="assets/imgs/theme/icons/icon-facebook-white.svg" alt=""></a>
+                <a href="#"><img width="18px" src="assets/imgs/theme/icons/icon-twitter-white.svg" alt=""></a>
+                <a href="#"><img width="18px" src="assets/imgs/theme/icons/icon-instagram-white.svg" alt=""></a>
+                <a href="#"><img width="18px" src="assets/imgs/theme/icons/icon-pinterest-white.svg" alt=""></a>
+                <a href="#"><img width="18px" src="assets/imgs/theme/icons/icon-youtube-white.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="mb-0">
+                Copyright 2021 © Nest. All rights reserved. Powered by AliThemes.
+            </p>
+        </div>
+    </div>
+    <div class="preloader">
+        <img src="assets/imgs/theme/loading.gif" alt="preloader" />
+    </div>
+
+    <!-- javascript here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
